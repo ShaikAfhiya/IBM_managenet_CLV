@@ -52,7 +52,8 @@ Joblib
 📌 API Endpoint
 POST /predict
 📥 Input Format (JSON)
-{
+
+  {
   "Response": "No",
   "Coverage": "Basic",
   "Education": "Bachelor",
@@ -70,7 +71,7 @@ POST /predict
   "Policy": "Corporate L3",
   "Renew Offer Type": "Offer1",
   "Sales Channel": "Agent",
-  "Total Claim Amount": 384.8,
+  "Total Claim Amount": 384.811147,
   "Vehicle Class": "Two-Door Car",
   "Vehicle Size": "Medsize"
 }
