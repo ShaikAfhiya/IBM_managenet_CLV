@@ -18,6 +18,7 @@ Feature Engineering
 Model Training
 Model Evaluation
 Model Deployment using FastAPI
+
 📂 Dataset Information
 
 The dataset contains customer-related features such as:
@@ -40,7 +41,9 @@ Vehicle Size
 👉 Target Variable:
 
 Customer Lifetime Value (CLV)
+
 🛠️ Tech Stack
+
 Python 🐍
 Pandas
 NumPy
@@ -48,9 +51,13 @@ Scikit-learn
 FastAPI ⚡
 Pydantic
 Joblib
+
 ⚙️ Model Deployment (FastAPI)
+
 📌 API Endpoint
-POST /predict
+
+POST /
+
 📥 Input Format (JSON)
 
   {
@@ -75,24 +82,41 @@ POST /predict
   "Vehicle Class": "Two-Door Car",
   "Vehicle Size": "Medsize"
 }
+
+
 📤 Output
+
+
 {
-  "Customer Lifetime Value Prediction": 12345.67
+  "Customer Lifetime Value Prediction": 7.92
 }
+
+
 ▶️ How to Run Locally
+
+
 1️⃣ Clone the repository
+
 git clone https://github.com/your-username/clv-project.git
 cd clv-project
+
 2️⃣ Install dependencies
+
 pip install fastapi uvicorn pandas scikit-learn joblib
+
 3️⃣ Run FastAPI server
+
 uvicorn app:app --reload
+
 4️⃣ Open API docs
+
 http://127.0.0.1:8000/docs
+
 📊 Model Features Handling
 Uses Pydantic aliases to handle column names with spaces
 Converts request data into DataFrame for prediction
 Ensures proper type conversion for ML model
+
 🚀 Key Highlights
 
 ✔ End-to-end ML pipeline
